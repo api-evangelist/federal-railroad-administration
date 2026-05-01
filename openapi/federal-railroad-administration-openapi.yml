@@ -1,0 +1,69 @@
+openapi: 3.0.3
+info:
+  title: Federal Railroad Administration Public API
+  description: >-
+    The FRA Public API provides access to railroad safety datasets including
+    accidents, incidents, highway-rail grade crossings, inspections, and
+    operational data published through the FRA Office of Safety Analysis.
+  version: '1.0'
+  contact:
+    name: Federal Railroad Administration
+    url: https://safetydata.fra.dot.gov/MasterWebService/publicapi/
+servers:
+  - url: https://safetydata.fra.dot.gov/MasterWebService/publicapi
+    description: Production
+paths:
+  /accidents:
+    get:
+      summary: Retrieve railroad accident records
+      operationId: listAccidents
+      parameters:
+        - name: year
+          in: query
+          schema:
+            type: integer
+        - name: railroad
+          in: query
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Accident records
+  /incidents:
+    get:
+      summary: Retrieve railroad incident records
+      operationId: listIncidents
+      parameters:
+        - name: year
+          in: query
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Incident records
+  /crossings:
+    get:
+      summary: Retrieve highway-rail grade crossing inventory
+      operationId: listCrossings
+      parameters:
+        - name: state
+          in: query
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Crossing inventory records
+  /inspections:
+    get:
+      summary: Retrieve FRA inspection records
+      operationId: listInspections
+      responses:
+        '200':
+          description: Inspection records
+  /operational-data:
+    get:
+      summary: Retrieve railroad operational data
+      operationId: listOperationalData
+      responses:
+        '200':
+          description: Operational data records
