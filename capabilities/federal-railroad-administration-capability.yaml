@@ -1,0 +1,223 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Federal Railroad Administration Public API
+  description: The FRA Public API provides access to railroad safety datasets including accidents, incidents, highway-rail
+    grade crossings, inspections, and operational data published through the FRA Office of Safety Analysis.
+  tags:
+  - Federal
+  - Railroad
+  - Administration
+  - API
+  created: '2026-05-06'
+  modified: '2026-05-06'
+capability:
+  consumes:
+  - type: http
+    namespace: federal-railroad-administration
+    baseUri: https://safetydata.fra.dot.gov/MasterWebService/publicapi
+    description: Federal Railroad Administration Public API HTTP API.
+    resources:
+    - name: accidents
+      path: /accidents
+      operations:
+      - name: listaccidents
+        method: GET
+        description: Retrieve railroad accident records
+        inputParameters:
+        - name: year
+          in: query
+          type: integer
+        - name: railroad
+          in: query
+          type: string
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: incidents
+      path: /incidents
+      operations:
+      - name: listincidents
+        method: GET
+        description: Retrieve railroad incident records
+        inputParameters:
+        - name: year
+          in: query
+          type: integer
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: crossings
+      path: /crossings
+      operations:
+      - name: listcrossings
+        method: GET
+        description: Retrieve highway-rail grade crossing inventory
+        inputParameters:
+        - name: state
+          in: query
+          type: string
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: inspections
+      path: /inspections
+      operations:
+      - name: listinspections
+        method: GET
+        description: Retrieve FRA inspection records
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: operational-data
+      path: /operational-data
+      operations:
+      - name: listoperationaldata
+        method: GET
+        description: Retrieve railroad operational data
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+  exposes:
+  - type: rest
+    port: 8080
+    namespace: federal-railroad-administration-rest
+    description: REST adapter for Federal Railroad Administration Public API.
+    resources:
+    - path: /accidents
+      name: listaccidents
+      operations:
+      - method: GET
+        name: listaccidents
+        description: Retrieve railroad accident records
+        call: federal-railroad-administration.listaccidents
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /incidents
+      name: listincidents
+      operations:
+      - method: GET
+        name: listincidents
+        description: Retrieve railroad incident records
+        call: federal-railroad-administration.listincidents
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /crossings
+      name: listcrossings
+      operations:
+      - method: GET
+        name: listcrossings
+        description: Retrieve highway-rail grade crossing inventory
+        call: federal-railroad-administration.listcrossings
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /inspections
+      name: listinspections
+      operations:
+      - method: GET
+        name: listinspections
+        description: Retrieve FRA inspection records
+        call: federal-railroad-administration.listinspections
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /operational-data
+      name: listoperationaldata
+      operations:
+      - method: GET
+        name: listoperationaldata
+        description: Retrieve railroad operational data
+        call: federal-railroad-administration.listoperationaldata
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    port: 9090
+    namespace: federal-railroad-administration-mcp
+    transport: http
+    description: MCP adapter for Federal Railroad Administration Public API for AI agent use.
+    tools:
+    - name: listaccidents
+      description: Retrieve railroad accident records
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: federal-railroad-administration.listaccidents
+      with:
+        year: tools.year
+        railroad: tools.railroad
+      inputParameters:
+      - name: year
+        type: integer
+        description: year
+      - name: railroad
+        type: string
+        description: railroad
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: listincidents
+      description: Retrieve railroad incident records
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: federal-railroad-administration.listincidents
+      with:
+        year: tools.year
+      inputParameters:
+      - name: year
+        type: integer
+        description: year
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: listcrossings
+      description: Retrieve highway-rail grade crossing inventory
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: federal-railroad-administration.listcrossings
+      with:
+        state: tools.state
+      inputParameters:
+      - name: state
+        type: string
+        description: state
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: listinspections
+      description: Retrieve FRA inspection records
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: federal-railroad-administration.listinspections
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: listoperationaldata
+      description: Retrieve railroad operational data
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: federal-railroad-administration.listoperationaldata
+      outputParameters:
+      - type: object
+        mapping: $.
