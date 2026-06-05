@@ -1,8 +1,8 @@
 # Federal Railroad Administration (federal-railroad-administration)
 
-The Federal Railroad Administration (FRA) is an agency within the Department of Transportation that creates and enforces rail safety regulations, administers rail funding, and researches rail improvement strategies and technologies.
+The Federal Railroad Administration (FRA) is an agency within the Department of Transportation that is responsible for regulating and overseeing the safety of the nation's railroad systems.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/federal-railroad-administration/refs/heads/main/apis.yml)
+**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/federal-railroad-administration/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/federal-railroad-administration/refs/heads/main/apis.yml)
 
 ## Scope
 
@@ -20,13 +20,13 @@ The Federal Railroad Administration (FRA) is an agency within the Department of 
 ## Timestamps
 
 - **Created:** 2024-03-29
-- **Modified:** 2026-04-28
+- **Modified:** 2026-05-19
 
 ## APIs
 
 ### Federal Railroad Administration Public API
 
-The FRA Public API provides safety data and access to railroad datasets including accidents, incidents, highway-rail grade crossings, inspections, and operational data.
+The Federal Railroad Administration Public API provides safety data and access to railroad datasets including accidents, incidents, highway-rail grade crossings, inspections, and operational data.
 
 - **Human URL:** [https://safetydata.fra.dot.gov/MasterWebService/publicapi/](https://safetydata.fra.dot.gov/MasterWebService/publicapi/)
 - **Base URL:** `https://safetydata.fra.dot.gov/MasterWebService/publicapi`
@@ -39,15 +39,17 @@ The FRA Public API provides safety data and access to railroad datasets includin
 #### Properties
 
 - [Documentation](https://safetydata.fra.dot.gov/MasterWebService/publicapi/)
-- [OpenAPI](openapi/federal-railroad-administration-openapi.yml)
+- [OpenAPI](https://raw.githubusercontent.com/api-evangelist/federal-railroad-administration/refs/heads/main/openapi/federal-railroad-administration-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
+- [Postman Collection](collections/federal-railroad-administration.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/federal-railroad-administration.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ## Common Properties
 
+- [LinkedIn](https://www.linkedin.com/company/federal-railroad-administration)
 - [Website](https://www.fra.dot.gov/)
 - [Documentation](https://safetydata.fra.dot.gov/MasterWebService/publicapi/)
 
 ## Maintainers
 
 **FN:** Kin Lane
-
 **Email:** kin@apievangelist.com
