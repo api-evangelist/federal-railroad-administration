@@ -1,0 +1,338 @@
+{
+  "item": [
+    {
+      "id": "efcd816d-0b8f-4e9c-bca0-157a6950157a",
+      "name": "Retrieve railroad accident records",
+      "request": {
+        "name": "Retrieve railroad accident records",
+        "description": {},
+        "url": {
+          "path": [
+            "accidents"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [
+            {
+              "disabled": false,
+              "key": "year",
+              "value": "<integer>"
+            },
+            {
+              "disabled": false,
+              "key": "railroad",
+              "value": "<string>"
+            }
+          ],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "7b31b5ac-958b-4467-be6c-ae75c5142025",
+          "name": "Accident records",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "accidents"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "key": "year",
+                  "value": "<integer>"
+                },
+                {
+                  "key": "railroad",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "462facc3-7928-4a70-8d8f-a28d3076390d",
+      "name": "Retrieve railroad incident records",
+      "request": {
+        "name": "Retrieve railroad incident records",
+        "description": {},
+        "url": {
+          "path": [
+            "incidents"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [
+            {
+              "disabled": false,
+              "key": "year",
+              "value": "<integer>"
+            }
+          ],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "5eb792eb-5b32-4ecd-9d80-b9a4ddbd73af",
+          "name": "Incident records",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "incidents"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "key": "year",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "91937f41-3827-415a-9302-edf672975eb8",
+      "name": "Retrieve highway-rail grade crossing inventory",
+      "request": {
+        "name": "Retrieve highway-rail grade crossing inventory",
+        "description": {},
+        "url": {
+          "path": [
+            "crossings"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [
+            {
+              "disabled": false,
+              "key": "state",
+              "value": "<string>"
+            }
+          ],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "1ca0230d-83e3-4310-9205-c9a6331dc4a7",
+          "name": "Crossing inventory records",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "crossings"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "key": "state",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "7be0b3c4-e98b-4d4f-bb6d-4462bd222c54",
+      "name": "Retrieve FRA inspection records",
+      "request": {
+        "name": "Retrieve FRA inspection records",
+        "description": {},
+        "url": {
+          "path": [
+            "inspections"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "589477f3-7473-4978-8863-6a2f77c96003",
+          "name": "Inspection records",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "inspections"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "a0e5ecce-e9ff-4dee-9bb6-248573e28c06",
+      "name": "Retrieve railroad operational data",
+      "request": {
+        "name": "Retrieve railroad operational data",
+        "description": {},
+        "url": {
+          "path": [
+            "operational-data"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "0e5e785f-6a5c-40b2-bce7-eec281e4e378",
+          "name": "Operational data records",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "operational-data"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://safetydata.fra.dot.gov/MasterWebService/publicapi",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "e057fe3b-6fc0-4013-acaa-32bffe8a988e",
+    "name": "Federal Railroad Administration Public API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The FRA Public API provides access to railroad safety datasets including accidents, incidents, highway-rail grade crossings, inspections, and operational data published through the FRA Office of Safety Analysis.\n\nContact Support:\n Name: Federal Railroad Administration",
+      "type": "text/plain"
+    }
+  }
+}

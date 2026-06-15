@@ -1,0 +1,91 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Federal Railroad Administration Public API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Retrieve railroad accident records",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://safetydata.fra.dot.gov/MasterWebService/publicapi/accidents",
+        "params": [
+          {
+            "name": "year",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "railroad",
+            "value": "",
+            "type": "query"
+          }
+        ]
+      },
+      "docs": "Retrieve railroad accident records"
+    },
+    {
+      "info": {
+        "name": "Retrieve railroad incident records",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://safetydata.fra.dot.gov/MasterWebService/publicapi/incidents",
+        "params": [
+          {
+            "name": "year",
+            "value": "",
+            "type": "query"
+          }
+        ]
+      },
+      "docs": "Retrieve railroad incident records"
+    },
+    {
+      "info": {
+        "name": "Retrieve highway-rail grade crossing inventory",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://safetydata.fra.dot.gov/MasterWebService/publicapi/crossings",
+        "params": [
+          {
+            "name": "state",
+            "value": "",
+            "type": "query"
+          }
+        ]
+      },
+      "docs": "Retrieve highway-rail grade crossing inventory"
+    },
+    {
+      "info": {
+        "name": "Retrieve FRA inspection records",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://safetydata.fra.dot.gov/MasterWebService/publicapi/inspections"
+      },
+      "docs": "Retrieve FRA inspection records"
+    },
+    {
+      "info": {
+        "name": "Retrieve railroad operational data",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://safetydata.fra.dot.gov/MasterWebService/publicapi/operational-data"
+      },
+      "docs": "Retrieve railroad operational data"
+    }
+  ],
+  "bundled": true
+}
