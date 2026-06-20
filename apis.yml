@@ -4,7 +4,7 @@ description: >-
   The Federal Railroad Administration (FRA) is an agency within the Department of Transportation that is responsible for
   regulating and overseeing the safety of the nation's railroad systems.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 access: 3rd-Party
 created: '2024-03-29'
 modified: '2026-05-19'
@@ -19,7 +19,7 @@ specificationVersion: '0.19'
 apis:
   - aid: federal-railroad-administration:federal-railroad-administration
     name: Federal Railroad Administration Public API
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     tags:
       - Railroads
       - Safety
