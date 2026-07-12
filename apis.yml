@@ -35,6 +35,8 @@ apis:
         url: >-
           https://raw.githubusercontent.com/api-evangelist/federal-railroad-administration/refs/heads/main/openapi/federal-railroad-administration-openapi.yml
 common:
+  - type: DomainSecurity
+    url: security/federal-railroad-administration-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/federal-railroad-administration
   - type: Website
