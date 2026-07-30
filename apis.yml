@@ -4,7 +4,19 @@ description: >-
   The Federal Railroad Administration (FRA) is an agency within the Department of Transportation that is responsible for
   regulating and overseeing the safety of the nation's railroad systems.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/federal-railroad-administration.png
 access: 3rd-Party
 created: '2024-03-29'
 modified: '2026-05-19'
@@ -17,23 +29,68 @@ tags:
 url: https://raw.githubusercontent.com/api-evangelist/federal-railroad-administration/refs/heads/main/apis.yml
 specificationVersion: '0.19'
 apis:
-  - aid: federal-railroad-administration:federal-railroad-administration
-    name: Federal Railroad Administration Public API
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    tags:
-      - Railroads
-      - Safety
-    humanURL: https://safetydata.fra.dot.gov/MasterWebService/publicapi/
-    baseURL: https://safetydata.fra.dot.gov/MasterWebService/publicapi
-    description: >-
-      The Federal Railroad Administration Public API provides safety data and access to railroad datasets including
-      accidents, incidents, highway-rail grade crossings, inspections, and operational data.
-    properties:
-      - type: Documentation
-        url: https://safetydata.fra.dot.gov/MasterWebService/publicapi/
-      - type: OpenAPI
-        url: >-
-          https://raw.githubusercontent.com/api-evangelist/federal-railroad-administration/refs/heads/main/openapi/federal-railroad-administration-openapi.yml
+- aid: federal-railroad-administration:federal-railroad-administration-accidents-api
+  name: Federal Railroad Administration Accidents API
+  description: The Accidents API from Federal Railroad Administration — 1 operation(s) for accidents.
+  humanURL: https://safetydata.fra.dot.gov/MasterWebService/publicapi/
+  baseURL: https://safetydata.fra.dot.gov/MasterWebService/publicapi
+  tags:
+  - Accidents
+  properties:
+  - type: OpenAPI
+    url: openapi/federal-railroad-administration-accidents-api-openapi.yml
+  - type: Documentation
+    url: https://safetydata.fra.dot.gov/MasterWebService/publicapi/
+- aid: federal-railroad-administration:federal-railroad-administration-crossings-api
+  name: Federal Railroad Administration Crossings API
+  description: The Crossings API from Federal Railroad Administration — 1 operation(s) for crossings.
+  humanURL: https://safetydata.fra.dot.gov/MasterWebService/publicapi/
+  baseURL: https://safetydata.fra.dot.gov/MasterWebService/publicapi
+  tags:
+  - Crossings
+  properties:
+  - type: OpenAPI
+    url: openapi/federal-railroad-administration-crossings-api-openapi.yml
+  - type: Documentation
+    url: https://safetydata.fra.dot.gov/MasterWebService/publicapi/
+- aid: federal-railroad-administration:federal-railroad-administration-incidents-api
+  name: Federal Railroad Administration Incidents API
+  description: The Incidents API from Federal Railroad Administration — 1 operation(s) for incidents.
+  humanURL: https://safetydata.fra.dot.gov/MasterWebService/publicapi/
+  baseURL: https://safetydata.fra.dot.gov/MasterWebService/publicapi
+  tags:
+  - Incidents
+  properties:
+  - type: OpenAPI
+    url: openapi/federal-railroad-administration-incidents-api-openapi.yml
+  - type: Documentation
+    url: https://safetydata.fra.dot.gov/MasterWebService/publicapi/
+- aid: federal-railroad-administration:federal-railroad-administration-inspections-api
+  name: Federal Railroad Administration Inspections API
+  description: >-
+    The Inspections API from Federal Railroad Administration — 1 operation(s) for inspections.
+  humanURL: https://safetydata.fra.dot.gov/MasterWebService/publicapi/
+  baseURL: https://safetydata.fra.dot.gov/MasterWebService/publicapi
+  tags:
+  - Inspections
+  properties:
+  - type: OpenAPI
+    url: openapi/federal-railroad-administration-inspections-api-openapi.yml
+  - type: Documentation
+    url: https://safetydata.fra.dot.gov/MasterWebService/publicapi/
+- aid: federal-railroad-administration:federal-railroad-administration-operational-data-api
+  name: Federal Railroad Administration Operational Data API
+  description: >-
+    The Operational Data API from Federal Railroad Administration — 1 operation(s) for operational data.
+  humanURL: https://safetydata.fra.dot.gov/MasterWebService/publicapi/
+  baseURL: https://safetydata.fra.dot.gov/MasterWebService/publicapi
+  tags:
+  - Operational Data
+  properties:
+  - type: OpenAPI
+    url: openapi/federal-railroad-administration-operational-data-api-openapi.yml
+  - type: Documentation
+    url: https://safetydata.fra.dot.gov/MasterWebService/publicapi/
 common:
   - type: AgenticAccess
     url: agentic-access/federal-railroad-administration-agentic-access.yml
