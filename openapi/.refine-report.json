@@ -1,0 +1,22 @@
+{
+  "provider": "federal-railroad-administration",
+  "sources": [
+    "federal-railroad-administration-accidents-api-openapi.yml",
+    "federal-railroad-administration-crossings-api-openapi.yml",
+    "federal-railroad-administration-incidents-api-openapi.yml",
+    "federal-railroad-administration-inspections-api-openapi.yml",
+    "federal-railroad-administration-operational-data-api-openapi.yml"
+  ],
+  "outputs": [
+    "federal-railroad-administration-accidents-api-openapi.yml",
+    "federal-railroad-administration-crossings-api-openapi.yml",
+    "federal-railroad-administration-incidents-api-openapi.yml",
+    "federal-railroad-administration-inspections-api-openapi.yml",
+    "federal-railroad-administration-operational-data-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
