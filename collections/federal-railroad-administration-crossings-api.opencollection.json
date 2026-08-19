@@ -1,0 +1,36 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Federal Railroad Administration Public Accidents Crossings API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Crossings",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Retrieve highway-rail grade crossing inventory",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://safetydata.fra.dot.gov/MasterWebService/publicapi/crossings",
+            "params": [
+              {
+                "name": "state",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Retrieve highway-rail grade crossing inventory"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

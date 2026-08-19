@@ -1,0 +1,41 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Federal Railroad Administration Public Accidents API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Accidents",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Retrieve railroad accident records",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://safetydata.fra.dot.gov/MasterWebService/publicapi/accidents",
+            "params": [
+              {
+                "name": "year",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "railroad",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Retrieve railroad accident records"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

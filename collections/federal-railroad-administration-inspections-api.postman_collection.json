@@ -1,0 +1,87 @@
+{
+  "item": [
+    {
+      "id": "f169e3fe-d66b-4b76-8d50-4b18a80d4368",
+      "name": "Inspections",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "fd5fa070-1a02-4946-824d-2f7a676a4082",
+          "name": "Retrieve FRA inspection records",
+          "request": {
+            "name": "Retrieve FRA inspection records",
+            "description": {},
+            "url": {
+              "path": [
+                "inspections"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c49329e5-99bf-41a7-a62b-6dd457952a79",
+              "name": "Inspection records",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "inspections"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://safetydata.fra.dot.gov/MasterWebService/publicapi",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "a6897453-087c-4f5c-81cc-d5398b62f8f3",
+    "name": "Federal Railroad Administration Public Accidents Inspections API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The FRA Public API provides access to railroad safety datasets including accidents, incidents, highway-rail grade crossings, inspections, and operational data published through the FRA Office of Safety Analysis.\n\nContact Support:\n Name: Federal Railroad Administration",
+      "type": "text/plain"
+    }
+  }
+}

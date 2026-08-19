@@ -1,0 +1,87 @@
+{
+  "item": [
+    {
+      "id": "fb6ea235-b671-4f13-86b4-f4c7f9b4ff65",
+      "name": "Operational Data",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "a0b290c7-9458-446c-922d-fbbdc7ad9950",
+          "name": "Retrieve railroad operational data",
+          "request": {
+            "name": "Retrieve railroad operational data",
+            "description": {},
+            "url": {
+              "path": [
+                "operational-data"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2ce51bc6-63a3-4e3c-b0d5-58d5a6a01040",
+              "name": "Operational data records",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "operational-data"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://safetydata.fra.dot.gov/MasterWebService/publicapi",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "da1c02b4-b323-4e17-9e72-479e2d97ffc6",
+    "name": "Federal Railroad Administration Public Accidents Operational Data API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The FRA Public API provides access to railroad safety datasets including accidents, incidents, highway-rail grade crossings, inspections, and operational data published through the FRA Office of Safety Analysis.\n\nContact Support:\n Name: Federal Railroad Administration",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "item": [
+    {
+      "id": "7f480f66-8b90-48ac-be05-fd79d152d543",
+      "name": "Crossings",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "25e4a2b5-77b1-47e9-b602-04450b1d4b83",
+          "name": "Retrieve highway-rail grade crossing inventory",
+          "request": {
+            "name": "Retrieve highway-rail grade crossing inventory",
+            "description": {},
+            "url": {
+              "path": [
+                "crossings"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "state",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "df93f637-2699-4360-9053-6f74ec61f85e",
+              "name": "Crossing inventory records",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "crossings"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "state",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://safetydata.fra.dot.gov/MasterWebService/publicapi",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "7efdc091-b45b-46b6-8f43-3c71b0c72283",
+    "name": "Federal Railroad Administration Public Accidents Crossings API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The FRA Public API provides access to railroad safety datasets including accidents, incidents, highway-rail grade crossings, inspections, and operational data published through the FRA Office of Safety Analysis.\n\nContact Support:\n Name: Federal Railroad Administration",
+      "type": "text/plain"
+    }
+  }
+}

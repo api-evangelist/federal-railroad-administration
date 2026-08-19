@@ -1,0 +1,29 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Federal Railroad Administration Public Accidents Operational Data API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Operational Data",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Retrieve railroad operational data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://safetydata.fra.dot.gov/MasterWebService/publicapi/operational-data"
+          },
+          "docs": "Retrieve railroad operational data"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
