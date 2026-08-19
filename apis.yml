@@ -27,7 +27,7 @@ tags:
   - Safety
   - Transportation
 url: https://raw.githubusercontent.com/api-evangelist/federal-railroad-administration/refs/heads/main/apis.yml
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
 - aid: federal-railroad-administration:federal-railroad-administration-accidents-api
   name: Federal Railroad Administration Accidents API
