@@ -88,6 +88,8 @@ apis:
   humanURL: https://safetydata.fra.dot.gov/MasterWebService/publicapi/
   baseURL: https://safetydata.fra.dot.gov/MasterWebService/publicapi
   tags:
+  - Inspection
+  tags_raw:
   - Inspections
   properties:
   - type: OpenAPI
