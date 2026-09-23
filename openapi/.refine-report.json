@@ -1,11 +1,7 @@
 {
   "provider": "federal-railroad-administration",
   "sources": [
-    "federal-railroad-administration-accidents-api-openapi.yml",
-    "federal-railroad-administration-crossings-api-openapi.yml",
-    "federal-railroad-administration-incidents-api-openapi.yml",
-    "federal-railroad-administration-inspections-api-openapi.yml",
-    "federal-railroad-administration-operational-data-api-openapi.yml"
+    "_original/federal-railroad-administration-openapi.yml"
   ],
   "outputs": [
     "federal-railroad-administration-accidents-api-openapi.yml",
@@ -17,6 +13,26 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "federal-railroad-administration-openapi.yml: upgraded openapi 3.0.3 -> OpenAPI 3.2.0",
+    "federal-railroad-administration-openapi.yml: tagged paths GET /accidents -> Accidents",
+    "federal-railroad-administration-openapi.yml: tagged paths GET /incidents -> Incidents",
+    "federal-railroad-administration-openapi.yml: tagged paths GET /crossings -> Crossings",
+    "federal-railroad-administration-openapi.yml: tagged paths GET /inspections -> Inspections",
+    "federal-railroad-administration-openapi.yml: tagged paths GET /operational-data -> Operational Data",
+    "federal-railroad-administration-openapi.yml: declared missing tag: Accidents",
+    "federal-railroad-administration-openapi.yml: declared missing tag: Crossings",
+    "federal-railroad-administration-openapi.yml: declared missing tag: Incidents",
+    "federal-railroad-administration-openapi.yml: declared missing tag: Inspections",
+    "federal-railroad-administration-openapi.yml: declared missing tag: Operational Data",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "federal-railroad-administration-accidents-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "federal-railroad-administration-crossings-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "federal-railroad-administration-incidents-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "federal-railroad-administration-inspections-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "federal-railroad-administration-operational-data-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
