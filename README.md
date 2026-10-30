@@ -1,4 +1,4 @@
-# Federal Railroad Administration (federal-railroad-administration)
+# Federal Railroad Administration
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,54 +66,121 @@
 
 The Federal Railroad Administration (FRA) is an agency within the Department of Transportation that is responsible for regulating and overseeing the safety of the nation's railroad systems.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/federal-railroad-administration/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/federal-railroad-administration/refs/heads/main/apis.yml)
+**Areas:** Federal Government · Railroads · Safety · Transportation
 
-## Scope
+## Federal Railroad Administration on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for Federal Railroad Administration is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/federal-railroad-administration/](https://apis.io/providers/federal-railroad-administration/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (5)
 
-- Federal Government
-- Railroads
-- Safety
-- Transportation
+- [Federal Railroad Administration Accidents API](https://apis.io/apis/federal-railroad-administration/federal-railroad-administration-accidents-api/) — The Accidents API from Federal Railroad Administration — 1 operation(s) for accidents.
+- [Federal Railroad Administration Crossings API](https://apis.io/apis/federal-railroad-administration/federal-railroad-administration-crossings-api/) — The Crossings API from Federal Railroad Administration — 1 operation(s) for crossings.
+- [Federal Railroad Administration Incidents API](https://apis.io/apis/federal-railroad-administration/federal-railroad-administration-incidents-api/) — The Incidents API from Federal Railroad Administration — 1 operation(s) for incidents.
+- [Federal Railroad Administration Inspections API](https://apis.io/apis/federal-railroad-administration/federal-railroad-administration-inspections-api/) — The Inspections API from Federal Railroad Administration — 1 operation(s) for inspections.
+- [Federal Railroad Administration Operational Data API](https://apis.io/apis/federal-railroad-administration/federal-railroad-administration-operational-data-api/) — The Operational Data API from Federal Railroad Administration — 1 operation(s) for operational data.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2024-03-29
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Federal Railroad Administration Public API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-The Federal Railroad Administration Public API provides safety data and access to railroad datasets including accidents, incidents, highway-rail grade crossings, inspections, and operational data.
+- [Federal Railroad Administration Agentic Access](https://apis.io/agentic-access/federal-railroad-administration/federal-railroad-administration-agentic-access/)
 
-- **Human URL:** [https://safetydata.fra.dot.gov/MasterWebService/publicapi/](https://safetydata.fra.dot.gov/MasterWebService/publicapi/)
-- **Base URL:** `https://safetydata.fra.dot.gov/MasterWebService/publicapi`
+#### Collections (6)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Railroads
-- Safety
+- [Federal Railroad Administration Public API](https://apis.io/collections/federal-railroad-administration/open-federal-railroad-administration/)
+- [Federal Railroad Administration Public Accidents API](https://apis.io/collections/federal-railroad-administration/open-federal-railroad-administration-accidents-api/)
+- [Federal Railroad Administration Public Accidents Crossings API](https://apis.io/collections/federal-railroad-administration/open-federal-railroad-administration-crossings-api/)
+- [Federal Railroad Administration Public Accidents Incidents API](https://apis.io/collections/federal-railroad-administration/open-federal-railroad-administration-incidents-api/)
+- [Federal Railroad Administration Public Accidents Inspections API](https://apis.io/collections/federal-railroad-administration/open-federal-railroad-administration-inspections-api/)
+- [Federal Railroad Administration Public Accidents Operational Data API](https://apis.io/collections/federal-railroad-administration/open-federal-railroad-administration-operational-data-api/)
 
-#### Properties
+#### Security (1)
 
-- [Documentation](https://safetydata.fra.dot.gov/MasterWebService/publicapi/)
-- [OpenAPI](https://raw.githubusercontent.com/api-evangelist/federal-railroad-administration/refs/heads/main/openapi/federal-railroad-administration-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/federal-railroad-administration.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/federal-railroad-administration.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-## Common Properties
+- [Federal Railroad Administration Domain Security](https://apis.io/security/federal-railroad-administration/federal-railroad-administration-domain-security/)
 
-- [LinkedIn](https://www.linkedin.com/company/federal-railroad-administration)
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Federal Railroad Administration Plans Pricing](https://apis.io/plans/federal-railroad-administration/federal-railroad-administration-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Federal Railroad Administration Rate Limits](https://apis.io/rate-limits/federal-railroad-administration/federal-railroad-administration-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Federal Railroad Administration Finops](https://apis.io/finops/federal-railroad-administration/federal-railroad-administration-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://www.fra.dot.gov/)
 - [Documentation](https://safetydata.fra.dot.gov/MasterWebService/publicapi/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 18.2** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 39.8 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 9.5 |
+| Access clarity | 7.9 |
+
+**Agent readiness 17.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Government & Public Sector
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/federal-railroad-administration/](https://apis.io/providers/federal-railroad-administration/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Federal Railroad Administration: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/federal-railroad-administration/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
